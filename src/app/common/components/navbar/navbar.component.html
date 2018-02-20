@@ -1,4 +1,4 @@
-<div class="header-wrapper" style="">
+<div class="header-wrapper">
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-2 col-sm-12 col-xs-12">
@@ -11,7 +11,7 @@
                         <ul>
                             <li *ngFor="let nav of navigation" [ngClass]="{'has-sub': nav.children }">
                                 <ng-container *ngIf="!nav.children">
-                                        <a href="{{nav.url}}">{{nav.name}}</a>
+                                        <a routerLink="{{nav.url}}">{{nav.name}}</a>
                                 </ng-container>
                                 <ng-container *ngIf="nav.children">
                                         <span class="submenu-button"></span><a href="{{nav.url}}">{{nav.name}}</a>

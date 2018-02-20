@@ -4,18 +4,20 @@ import { Angular2FontawesomeModule } from 'angular2-fontawesome/angular2-fontawe
 
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { NavbarComponent } from './header/navbar/navbar.component';
+import { AppRoutes } from './app.routings';
+import { MainModule } from './main/main.module';
+import { LoginModule } from './login/login.module';
 
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HeaderComponent,
-    NavbarComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
+    AppRoutes,
+    MainModule,
+    LoginModule,
     Angular2FontawesomeModule
   ],
   providers: [],

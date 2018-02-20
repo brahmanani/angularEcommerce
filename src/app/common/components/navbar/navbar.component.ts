@@ -12,7 +12,7 @@ export class NavbarComponent implements OnInit {
   navigation = [
     {
       name:"Home",
-      url:"index.html"
+      url:"/app"
     },
     {
       name:"Men",
@@ -112,7 +112,7 @@ export class NavbarComponent implements OnInit {
     },
     {
       name:"Contact Us",
-      url:"contact-us.html"
+      url:"contact"
     }
   ]
 
